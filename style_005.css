@@ -1,0 +1,30 @@
+body div{
+  width: 200px;
+  height: 200px;
+  background-color: #007FFFAB;
+  margin: 150px auto;
+  border-bottom: 5px solid #0D0D0D;
+  position: relative;
+  padding: 10px;
+  display: flex;
+  align-items: flex-end;
+  font-size: 30px;
+  font-weight: bold;
+  
+  }
+  body div:after{
+    content: "Elhassn";
+    position: absolute;
+  }
+  body div:before {
+    content: "";
+    position: absolute;
+    width: 69%;
+    height: 69%;
+    background-color: #0D0D0D;
+    border-bottom:5px solid white ;
+    border-right:5px solid white ;
+    rotate: 44.50deg;
+    top:-77px;
+    left: 31px;
+  }

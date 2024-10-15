@@ -1,0 +1,48 @@
+body {
+  box-sizing: border-box;
+
+}
+
+body div {
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  background-color: #eee;
+  padding: 5px;
+  color: black;
+  border-radius: 50%;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  }
+  body div:after {
+   content: "";
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    border: 10px solid;
+    position: absolute;
+    border-color: #C61E84 #C61E84 #C61E84 transparent;
+    transition: 5s;
+    transition-delay: 5s;
+  }
+  body div:before {
+    content: "";
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    border: 10px solid;
+    position: absolute;
+    border-color: #2E1EC6 transparent #2E1EC6 #2E1EC6;
+    transition: 5s;
+    
+  }
+  body div:hover::before {
+    transform: rotate(360deg);
+  }
+  body div:hover:after{
+    transform: rotate(360deg);
+  }

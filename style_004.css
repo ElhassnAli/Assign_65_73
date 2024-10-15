@@ -1,0 +1,40 @@
+:root{
+  --background-color: #D600EB;
+  --width: 150px;
+  --height: 100px;
+}
+  h1{
+  background-color: var(--background-color);
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  width: var(--width);
+  height: var(--height);
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  }
+  h1:before {
+  content: "";
+  width: var(--width);
+  height: var(--height);
+  background-color:var(--background-color);
+  position: absolute;
+  z-index: -1;
+  transform: skew(20deg);
+  right: 20px;
+  
+  }
+  h1:after {
+    content: "";
+    width: var(--width);
+    height: var(--height);
+    background-color: white;
+    position: absolute;
+    z-index: -2;
+    right: 25px;
+    border-left: 25px solid var(--background-color);
+    transform: skew(20deg);
+  }
